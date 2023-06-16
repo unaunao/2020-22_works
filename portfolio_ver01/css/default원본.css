@@ -1,0 +1,133 @@
+@charset: "utf-8";
+
+
+@font-face {
+  font-family: 'Nanum Barun Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/NanumBarunGothic.eot);
+  src: local('Nanum Barun Gothic'),
+       local('NanumBarunGothic'),
+       url(../fonts/NanumBarunGothic.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/NanumBarunGothic.woff2) format('woff2'),
+       url(../fonts/NanumBarunGothic.woff) format('woff'),
+       url(../fonts/NanumBarunGothic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Nanum Barun Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/NanumBarunGothicBold.eot);
+  src: local('Nanum Barun Gothic Bold'),
+       local('NanumBarunGothicBold'),
+       url(../fonts/NanumBarunGothicBold.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/NanumBarunGothicBold.woff2) format('woff2'),
+       url(../fonts/NanumBarunGothicBold.woff) format('woff'),
+       url(../fonts/NanumBarunGothicBold.ttf) format('truetype');}
+
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url(../fonts/Helvetica.eot);
+  src: local('Helvetica'),
+       local('Helvetica'),
+       url(../fonts/Helvetica.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/Helvetica.woff) format('woff'),
+       url(../fonts/Helvetica.ttf) format('truetype');}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url(../fonts/HelveticaNeue.eot);
+  src: local('HelveticaNeue'),
+       local('HelveticaNeue'),
+       url(../fonts/HelveticaNeue.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/HelveticaNeue.woff) format('woff'),
+       url(../fonts/HelveticaNeue.ttf) format('truetype');}
+
+
+       html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, a,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;}
+
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;}
+
+ul{list-style:none;}
+
+li{display: inline-block;}
+
+a {text-decoration:none; color:inherit; display:inline-block;}
+
+input, select {vertical-align:middle;}
+img{max-width:100%;}
+
+html,body{width:100%; height: 100%;}
+
+.blind{position:absolute; top:0; left:0; width:0; height:0; overflow: hidden;}
+.cl::before,.cl::after{content:''; display: block;}
+.cl::after{clear:both;}
+body {
+  font-family: 'Helvetica', '맑은고딕', sans-serif;position:relative;
+}
+/*h2{font-size:30px;}
+h3{font-size:28px;}
+h4{font-size:25px;}
+h5{font-size:18px;}*/
+.ko{font-family: 'Nanum Barun Gothic', sans-serif;}
+.en{font-family: 'HelveticaNeue', sans-serif;}
+
+/*menu*/
+.header{width: 100%; height: 100%}
+.header .wrap_m{position:fixed; right:0; top:0; width:100%; z-index: 1000;}
+.header .wrap_m>ul{width:100%; position: relative;}
+.header .wrap_m>ul li{/*display:flex; flex-direction: row; justify-content: flex-end;*/float:right; margin-right: 2px; cursor: pointer; background:#fff;}
+/*.header .wrap_m>ul li:nth-of-type(1){position:absolute; right:248px; top:0;}
+.header .wrap_m>ul li:nth-of-type(2){position:absolute; right:186px; top:0;}
+.header .wrap_m>ul li:nth-of-type(3){position:absolute; right:124px; top:0;}
+.header .wrap_m>ul li:nth-of-type(4){position:absolute; right:62px; top:0;}
+.header .wrap_m>ul li:nth-of-type(5){position:absolute; right:0; top:0;}*/
+.header .wrap_m>ul li.ac{float:left;/*justify-content: flex-start;*/}
+.header .wrap_m>ul li a{display:block; position: relative; z-index: 100;height:100vh;width:60px; }
+.header .wrap_m>ul li a .tit{transform:rotate(90deg); transform-origin: top left; font-size:15px; display:inline-block; margin-left:45px;
+ margin-top:30px;font-family: 'Helvetica', '맑은고딕', sans-serif; font-size:30px;z-index: 100; font-weight:bold;}
+.header .wrap_m>ul .m1 a .tit{color:#ba8564;}
+.header .wrap_m>ul .m1 a .dif{color:#293b4f;}
+.header .wrap_m>ul .m2 a .tit{color:#3c6541;}
+.header .wrap_m>ul .m3 a .tit{color:#386584;}
+.header .wrap_m>ul .m4 a .tit{color:#884c53;}
+.header .wrap_m>ul .m4 a .br{/*display:inline-block; */margin-left: 10px;}
+.header .wrap_m>ul .m5 a .tit{color:#333;}
+/*.cont{background: lightblue; width:100vh; padding:50px; height: 100vh;
+ position: absolute; right:60px; top:0;}*/
+.active{display: none;}
+
+
+/*content*/
+.content{position:relative; width:100%; height: 100%; position:absolute; top:0; left:0;}
+.content .section{position:absolute; top:0; left:0;width:0; height: 100%;}
+.content #pag1{background: #d0d1ad;}
+.content #pag2{background: #c2b19d;}
+.content #pag3{background: #d9e4ea;}
+.content #pag4{background: #e7e6e3;}
+.content #pag5{background: #b3afa3;}
+.content .open{width:100%;}
+.content .section.open{display: block;}
