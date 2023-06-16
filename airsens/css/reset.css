@@ -1,0 +1,150 @@
+@charset: "utf-8";
+
+
+@font-face {
+  font-family: 'Nanum Barun Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/NanumBarunGothic.eot);
+  src: local('Nanum Barun Gothic'),
+       local('NanumBarunGothic'),
+       url(../fonts/NanumBarunGothic.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/NanumBarunGothic.woff2) format('woff2'),
+       url(../fonts/NanumBarunGothic.woff) format('woff'),
+       url(../fonts/NanumBarunGothic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Nanum Barun Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/NanumBarunGothicBold.eot);
+  src: local('Nanum Barun Gothic Bold'),
+       local('NanumBarunGothicBold'),
+       url(../fonts/NanumBarunGothicBold.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/NanumBarunGothicBold.woff2) format('woff2'),
+       url(../fonts/NanumBarunGothicBold.woff) format('woff'),
+       url(../fonts/NanumBarunGothicBold.ttf) format('truetype');}
+
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700&display=swap');
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, a,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;}
+
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;}
+
+ul{list-style:none;}
+
+li{display: inline-block;}
+
+a {text-decoration:none; color:inherit; display:inline-block;}
+
+input, select {vertical-align:middle;}
+
+.blind{position:absolute; top:0; left:0; width:0; height:0; overflow: hidden;}
+.cl::before,.cl::after{content:''; display: block;}
+.cl::after{clear:both;}
+body {
+  font-family: 'Nanum Barun Gothic', sans-serif;
+}
+h2{font-size:30px;}
+h3{font-size:28px;}
+h4{font-size:25px;}
+h5{font-size:18px;}
+.en{font-family: 'Noto Sans KR', sans-serif;}
+.en_light{font-family: 'Noto Sans KR', sans-serif; font-weight:300;}
+
+img{max-width:100%;}
+
+/*header*/
+
+body{font-size:16px; color:#333; line-height: 1.5; background:#f1f1f1;}
+a{line-height: 1;}
+.contect{width:60px; height:60px; background:url(../images/chat_icon.png) no-repeat;
+  position:fixed; right:50px; bottom:50px; border-radius:50%; z-index: 9998;}
+.contect:hover,.contect:focus{box-shadow:0 0 20px rgba(0,0,0,0.5);}
+.contect:active{box-shadow:0 0 15px rgba(0,0,0,0.8);}
+#wrap{width:2000px; margin:0 auto; position: relative;}
+
+#header{height: 600px; position: relative;}
+#header .nvi{width:100%; font-size:14px; color:#fff; position:fixed; left:0; top:0; z-index: 9999;
+}
+#header .nvi.fixed{background:#0066cc; box-shadow:0 0 20px rgba(0,0,0,0.5);}
+#header .nvi_1170{height:70px;  position:relative; }
+#header .nvi_1170, #header .menu, #header .btn_top{padding:20px 0 17px;
+  box-sizing:border-box;}
+#header .nvi_1170, #header .wrap_v,.cologo, section{width:1170px; margin:0 auto;}
+#header .logo{position:absolute; left:0; top:20;}
+#header .logo span{background:url(../images/top_logo.png) no-repeat; width:92px; height:36px; display:inline-block;}
+#header .nvi.fixed .logo span{background: url(../images/drorne_03.png) no-repeat;}
+#header .menu{width:540px; position:absolute; left:162px; top:0; font-size:14px;}
+#header .menu .main_menu{float:left; margin-left:10px;display:inline-block; position:relative; 
+  padding-bottom:12px;}
+#header .menu .main_menu:nth-of-type(1){margin-left:0;}
+#header .menu .main_menu>a{padding:13px 30px 11px;}
+#header .menu .main_menu>a::after{position:absolute; left:50%; margin-left:-25px; top:35px; content:''; display:block; height:2px; width:0;
+background:#fff; transition:0.5s;}
+#header .menu .main_menu>a:hover::after{width:50px;}
+
+/*2단 메뉴 미완성*/
+#header .menu .sub_menu{position:absolute;font-size:13px;
+background:rgba(255,255,255,1); left:50%; top:50px;color:#333;
+ text-align: center; width:145px; padding:15px; box-sizing: border-box; margin-left:-70px;
+display: none; line-height: 1.8em; box-shadow:0 0 20px rgba(0,0,0,0.5);  font-weight:600;}
+ #header .menu .sub_menu:nth-of-type(4){width:110px;}
+ #header .menu .main_menu:hover .sub_menu{display: block;}
+
+
+#header .btn_top{position:absolute; right:0; top:2px;font-size:12px;}
+#header .btn_top li{float:left; margin-left:10px; border:1px solid #fff; border-radius:3px;}
+#header .btn_top li:hover{background:#fff; color:#7b6f72;}
+#header .btn_top li a:nth-child(1){padding:10px 20px;}
+#header .btn_top li a:nth-child(2){padding:8px 16px;}
+
+/*footer*/
+
+
+#footer1{height:388px; background:#fff; padding:50px; box-sizing: border-box;}
+.footer_top{padding-left:70px; position:relative;}
+.sit_map{padding-bottom:20px;}
+.sit_map ul{float:left; margin-right:90px;}
+.sit_map li{display: block; padding-bottom: 15px;font-size:12px;}
+.sit_map_tit{margin-bottom:10px;}
+.sit_map_tit>b{;font-size:14px;}
+/*.last_line{position: relative; background: gold;}*/
+.adress{font-size:12px;}
+.search_box{position:absolute;right: 0; bottom:0;}
+.search_box input[type="search"]{border:2px solid #0066cc; 
+  padding:5px;width:150px; height:30px;}
+.search{width:100%; height:15px;background:url(../images/search.png) no-repeat 95% 50%;}
+
+#footer2{height:100px; background:#0066cc;}
+#footer2 section{line-height:100px;}
+#footer2 .en_light{font-size:12px; color:#fff; padding-left:70px;display:inline-block;}
+#footer2 .social_icon{float:right; font-size:14px; color:#fff;}
+.social_icon a{padding-left:20px; vertical-align: middle;}
+
+
+
